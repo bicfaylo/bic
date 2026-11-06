@@ -1,4 +1,5 @@
 :root{
+  color-scheme:dark;
   --bg:#060d1c; --bg-2:#0a1730; --card:#0f1f3d; --card-2:#132850;
   --line:rgba(255,255,255,.08); --text:#e9eef8; --muted:#97a6c2;
   --blue:#2f6dff; --blue-2:#5b8dff; --white:#fff;
@@ -28,7 +29,7 @@ img{display:block;max-width:100%}
 .btn-sm{padding:10px 24px}
 
 /* Navbar */
-.navbar{position:fixed;top:0;left:0;right:0;z-index:100;padding:22px 0;transition:.3s}
+.navbar{position:fixed;top:0;padding-top:calc(22px + env(safe-area-inset-top,0px));left:0;right:0;z-index:100;padding:22px 0;transition:.3s}
 .navbar.sticky{background:rgba(6,13,28,.92);backdrop-filter:blur(12px);padding:14px 0;box-shadow:0 6px 30px rgba(0,0,0,.35)}
 .nav-box{display:flex;align-items:center;justify-content:space-between;gap:20px}
 .brand{font-size:1.8rem;font-weight:800;color:var(--white)}.brand span{color:var(--blue)}
@@ -217,8 +218,13 @@ details p{padding:0 24px 22px;color:var(--muted)}
 .lightbox .caption{color:var(--muted);margin-top:14px;text-align:center}
 
 /* Reveal */
-.reveal{opacity:0;transform:translateY(40px);transition:opacity .8s,transform .8s}
-.reveal.in{opacity:1;transform:none}
+.anim .reveal{opacity:.001;transform:translateY(40px);transition:opacity .8s,transform .8s}
+.anim .reveal.in{opacity:1;transform:none}
+.form-sent{display:none;margin-top:14px;padding:14px 18px;border-radius:14px;background:rgba(47,109,255,.12);border:1px solid rgba(91,141,255,.3);color:#c9d8ff}
+.form-sent.show{display:block}
+.form-sent b{color:#fff;user-select:all}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+:focus-visible{outline:2px solid var(--blue-2);outline-offset:3px}
 
 /* Responsive */
 @media(max-width:1100px){

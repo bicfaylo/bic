@@ -271,10 +271,14 @@ $("#contactForm").onsubmit = (e) => {
   e.preventDefault();
   const name = $("#cName").value, email = $("#cEmail").value, phone = $("#cPhone").value, msg = $("#cMsg").value;
   const body = `${msg}\n\nFrom: ${name}\nEmail: ${email}${phone ? "\nPhone: " + phone : ""}`;
+  $("#formSent").classList.add("show");
   window.location.href = `mailto:chongerabaraka1@gmail.com?subject=${encodeURIComponent("Portfolio enquiry from " + name)}&body=${encodeURIComponent(body)}`;
 };
 
-// Counters + reveal on scroll
+// Counters + reveal on scroll (content stays visible if motion is reduced or JS is slow)
+const motionOK = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (motionOK) document.documentElement.classList.add("anim");
+setTimeout(() => document.querySelectorAll(".reveal").forEach((x) => x.classList.add("in")), 4000);
 const io = new IntersectionObserver((entries) => entries.forEach((en) => {
   if (!en.isIntersecting) return;
   const t = en.target; io.unobserve(t);
