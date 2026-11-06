@@ -3,98 +3,220 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Baraka Chongera — Portfolio</title>
-  <meta name="description" content="Baraka Issack Chongera — IoT & embedded systems engineer and technology entrepreneur from Tanzania.">
+  <title>Baraka Chongera | IoT & Embedded Systems Engineer</title>
+  <meta name="description" content="Baraka Issack Chongera: IoT and embedded systems engineer, full-stack developer and technology entrepreneur from Tanzania.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="nav">
-    <a href="#top" class="logo">Baraka<span>.</span></a>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-    </nav>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader"><div class="load-text"><span>L</span><span>o</span><span>a</span><span>d</span><span>i</span><span>n</span><span>g</span></div></div>
+
+  <!-- Header -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-box">
+      <a href="#top" class="brand">Baraka<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#top">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#resume">Resume</a>
+        <a href="#referees">Referees</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn-sm nav-cta">Let's Talk</a>
+    </div>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <div class="hero-text">
-        <p class="eyebrow">IoT &amp; Embedded Systems · Technology Entrepreneur</p>
-        <h1>Baraka Issack <span>Chongera</span></h1>
-        <p class="lead">I build IoT and embedded products end to end: the hardware, the firmware and the software around them. Then I take them to paying customers. Founder of Field Link and Chimbo Mkononi, and Digital Health Developer at MUHAS. Based in Morogoro, Tanzania.</p>
-        <div class="cta">
-          <a href="#projects" class="btn">See my work</a>
-          <a href="#contact" class="btn ghost">Get in touch</a>
+    <!-- Banner -->
+    <section class="banner">
+      <div class="shape shape-1"></div><div class="shape shape-2"></div>
+      <div class="container banner-grid">
+        <div class="banner-info">
+          <h1>Hey <span class="wave">👋</span> I'm Baraka</h1>
+          <h2 class="rotating"><span id="rotator">IoT Engineer</span><span class="caret"></span></h2>
+          <p>I'm Baraka Issack Chongera, an ICT with Management student at Mzumbe University. I build IoT and embedded products end to end: the hardware, the firmware and the software around them. Then I take them to paying customers. Founder of three technology ventures and winner of two 2025 Mzumbe University Innovation Day awards.</p>
+          <div class="flex-social">
+            <a class="btn" href="#contact">Hire Me Now <span class="arrow">→</span></a>
+            <ul class="social" id="social"></ul>
+          </div>
+        </div>
+        <div class="banner-thumb">
+          <div class="ring"></div>
+          <img src="images/profile.jpg" alt="Baraka Chongera">
+          <div class="float-card fc-1"><strong>2×</strong><span>Innovation awards</span></div>
+          <div class="float-card fc-2"><strong>3</strong><span>Ventures founded</span></div>
         </div>
       </div>
-      <div class="hero-img"><img src="images/profile.jpg" alt="Baraka Chongera at the IEEE Region 8 University STEM Outreach"></div>
     </section>
 
-    <section class="stats">
-      <div><strong>2</strong><span>Innovation Day awards (2025)</span></div>
-      <div><strong>26</strong><span>Tone Salama units deployed</span></div>
-      <div><strong>60+</strong><span>Students placed via Field Link</span></div>
-      <div><strong>3</strong><span>Ventures founded</span></div>
-    </section>
-
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div id="projects-grid" class="projects"></div>
-    </section>
-
-    <section id="awards" class="section alt">
-      <h2>Awards &amp; Recognition</h2>
-      <div class="awards">
-        <div class="award"><span class="icon">🏆</span><h3>Innovation of the Year</h3><p>Mzumbe University Innovation Day 2025, for Tone Salama.</p></div>
-        <div class="award"><span class="icon">🚀</span><h3>Best Emerging Startup of the Year</h3><p>Mzumbe University Innovation Day 2025, for RolaCall.</p></div>
-        <div class="award"><span class="icon">🎓</span><h3>Invited Guest Lecturer</h3><p>MUHAS, Aug 2026. Taught robotics and AI to master's students in digital health.</p></div>
-        <div class="award"><span class="icon">🌍</span><h3>Youth Ignite Fellow</h3><p>Funguo Programme Student Founders Fellowship.</p></div>
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="about-top">
+          <div class="facts">
+            <div class="fact"><div class="counter"><span class="timer" data-to="26">0</span></div><span>Water units deployed</span></div>
+            <div class="fact"><div class="counter"><span class="timer" data-to="150">0</span><em>+</em></div><span>Orders processed</span></div>
+            <div class="fact"><div class="counter"><span class="timer" data-to="60">0</span><em>+</em></div><span>Students placed</span></div>
+            <div class="fact"><div class="counter"><span class="timer" data-to="20">0</span><em>+</em></div><span>Host organisations</span></div>
+          </div>
+          <div class="about-text">
+            <p class="big">I'm comfortable across <b>Arduino, ESP32, STM32 and LoRa</b> on the hardware side, and <b>Python, JavaScript and PostgreSQL</b> on the software side. I like turning real problems in Tanzania, like access to clean water, trusted commerce and student placements, into products people actually use.</p>
+            <a class="btn btn-border" href="#portfolio">See My Work <span class="arrow">→</span></a>
+          </div>
+        </div>
+        <div class="about-imgs">
+          <img src="images/presenting-2.jpg" alt="Baraka presenting at a workshop" loading="lazy">
+          <img src="images/funguo-fellowship.jpg" alt="Funguo Youth Ignite fellowship" loading="lazy">
+        </div>
       </div>
     </section>
 
-    <section id="experience" class="section">
-      <h2>Experience</h2>
-      <div id="timeline" class="timeline"></div>
-    </section>
-
-    <section id="gallery" class="section alt">
-      <h2>Gallery</h2>
-      <p class="sub">Exhibitions, fellowships, workshops and talks.</p>
-      <div id="gallery-grid" class="gallery"></div>
-    </section>
-
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <div id="skills-grid" class="skills"></div>
-    </section>
-
-    <section id="education" class="section alt">
-      <h2>Education</h2>
-      <div class="edu">
-        <div><h3>Bachelor of ICT with Management</h3><p>Mzumbe University, Morogoro · 2024 – Present</p></div>
-        <div><h3>Diploma in ICT</h3><p>Catholic University College of Mbeya · 2020 – 2022 · GPA 3.57/5</p></div>
-        <div><h3>Certificate in ICT</h3><p>St. Augustine University of Tanzania, Mbeya · 2019 – 2020 · GPA 4.65/5</p></div>
+    <!-- Services -->
+    <section id="services" class="section alt">
+      <div class="container">
+        <div class="heading"><h4 class="sub-title">Services</h4><h2 class="title">What I Do</h2></div>
+        <div class="services">
+          <div class="service"><div class="s-icon">📡</div><h4>IoT &amp; Embedded Systems</h4><p>Connected devices built on Arduino, ESP32, STM32, LoRa and GSM, from sensors and PCB prototyping to firmware and telemetry.</p></div>
+          <div class="service active"><div class="s-icon">💻</div><h4>Full-Stack Development</h4><p>Database-driven web platforms, REST APIs, dashboards and payment-linked workflows using Python, JavaScript and PostgreSQL.</p></div>
+          <div class="service"><div class="s-icon">🤖</div><h4>Robotics &amp; AI</h4><p>Robot design, 3D-printed prototypes, voice interaction and AI/LLM API integrations for education and health.</p></div>
+          <div class="service"><div class="s-icon">🚀</div><h4>Product &amp; Venture Building</h4><p>Taking ideas from prototype to paying customers: requirements, deployment, after-sales support and growth.</p></div>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <h2>Let's build something</h2>
-      <p>Open to collaborations, IoT projects, partnerships and speaking invitations.</p>
-      <div id="links" class="links"></div>
+    <!-- Portfolio -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <div class="heading"><h4 class="sub-title">Portfolio</h4><h2 class="title">My Recent Work</h2></div>
+        <div class="portfolio" id="portfolioGrid"></div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section alt">
+      <div class="container">
+        <div class="heading"><h4 class="sub-title">Top Skills</h4><h2 class="title">See My Expertise</h2></div>
+        <div class="skills" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Resume / Timeline -->
+    <section id="resume" class="section">
+      <div class="container">
+        <div class="timeline-box">
+          <div>
+            <h2 class="tl-title">My Experience</h2>
+            <div class="timeline" id="expTimeline"></div>
+          </div>
+          <div>
+            <h2 class="tl-title">Education Background</h2>
+            <div class="timeline" id="eduTimeline"></div>
+            <h2 class="tl-title mt">Awards &amp; Recognition</h2>
+            <div class="timeline" id="awardTimeline"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="section alt partners-area">
+      <div class="container">
+        <div class="heading"><h4 class="sub-title">Partners</h4><h2 class="title">Institutions &amp; Programmes I've Worked With</h2></div>
+        <div class="partners" id="partners"></div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="heading"><h4 class="sub-title">Gallery</h4><h2 class="title">Moments &amp; Milestones</h2></div>
+        <div class="gallery" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <!-- Referees -->
+    <section id="referees" class="section alt">
+      <div class="container">
+        <div class="heading"><h4 class="sub-title">Referees</h4><h2 class="title">People Who Can Vouch For My Work</h2></div>
+        <div class="referees" id="refereesGrid"></div>
+        <p class="ref-note">Contact details for referees are available on request.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-area">
+      <div class="container faq-grid">
+        <div class="faq-thumb">
+          <img src="images/speaking.jpg" alt="Baraka speaking" loading="lazy">
+          <div class="chat-card"><p>Can't find what you're looking for?</p><h5>I'd love to chat with you</h5><a href="#contact" aria-label="Contact">✉</a></div>
+        </div>
+        <div>
+          <h4 class="sub-title">FAQ</h4>
+          <h2 class="faq-title">Frequently Asked Questions</h2>
+          <details open><summary>What kind of projects do you take on?</summary><p>IoT and embedded hardware, full-stack web platforms, dashboards and robotics/AI prototypes, especially products that solve real problems for communities and businesses in East Africa.</p></details>
+          <details><summary>Can I see your work in action?</summary><p>Yes. Tone Salama units are deployed in 4 regions, Field Link and Chimbo Mkononi are live platforms, and the English teaching robot has been used in a primary school classroom. See the Portfolio section for links.</p></details>
+          <details><summary>Where are you based and how do we communicate?</summary><p>I'm based in Morogoro, Tanzania, and work with clients in Mbeya, Morogoro and Dar es Salaam. I communicate in English and Kiswahili by email, LinkedIn or WhatsApp.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt contact">
+      <div class="container">
+        <h1 class="fixed-text">Contact Me</h1>
+        <div class="contact-grid">
+          <form class="contact-form" id="contactForm">
+            <input id="cName" placeholder="Name" required>
+            <div class="row2"><input id="cEmail" type="email" placeholder="Email*" required><input id="cPhone" placeholder="Phone"></div>
+            <textarea id="cMsg" placeholder="Tell me about your project *" required></textarea>
+            <button class="btn" type="submit">Get in Touch <span class="arrow">→</span></button>
+            <p class="form-note">This opens your email app with the message ready to send.</p>
+          </form>
+          <div class="contact-info">
+            <div class="ci"><span>📍</span><div><h5>Location</h5><p>Morogoro, Tanzania</p></div></div>
+            <div class="ci"><span>✉</span><div><h5>Email</h5><p><a href="mailto:chongerabaraka1@gmail.com">chongerabaraka1@gmail.com</a></p></div></div>
+            <div class="ci"><span>in</span><div><h5>LinkedIn</h5><p><a href="https://www.linkedin.com/in/baraka_chongera" target="_blank" rel="noopener">linkedin.com/in/baraka_chongera</a></p></div></div>
+            <div class="ci"><span>🗣</span><div><h5>Languages</h5><p>English (fluent) · Kiswahili (native)</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo -->
+    <section class="section promo">
+      <div class="container">
+        <h2>Hello 👋 I'm available for projects &amp; collaborations</h2>
+        <h4>For a quick response: <a href="https://www.linkedin.com/in/baraka_chongera" target="_blank" rel="noopener">message me on LinkedIn</a></h4>
+        <a class="btn" href="#contact">Hire Me Now <span class="arrow">→</span></a>
+      </div>
     </section>
   </main>
 
-  <footer class="footer">© <span id="year"></span> Baraka Issack Chongera · English &amp; Kiswahili</footer>
+  <footer class="footer">
+    <div class="container">
+      <a href="#top" class="brand">Baraka<span>.</span></a>
+      <ul class="foot-menu">
+        <li><a href="#top">Home</a></li><li><a href="#services">Services</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#resume">Resume</a></li><li><a href="#contact">Contact</a></li>
+      </ul>
+      <p>Copyright © <span id="year"></span> Baraka Issack Chongera. All Rights Reserved.</p>
+    </div>
+  </footer>
 
-  <div id="lightbox" class="lightbox" hidden>
-    <button class="close" aria-label="Close">&times;</button>
-    <img alt="">
-    <p class="caption"></p>
+  <!-- Project modal -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
   </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" hidden><button class="modal-close" aria-label="Close">×</button><img alt=""><p class="caption"></p></div>
 
   <script src="script.js"></script>
 </body>

@@ -1,14 +1,16 @@
-# bic — Baraka Chongera Portfolio
+# bic: Baraka Chongera Portfolio
 
-A simple, fast portfolio site (plain HTML/CSS/JS, no build step).
+A personal portfolio site in a dark navy theme, written in plain HTML/CSS/JS with no build step.
 
-## Add your photos (from your phone)
-1. On GitHub, open the `images/` folder → **Add file → Upload files** (works from the GitHub mobile site/app).
-2. Upload `profile.jpg` (your face photo) and your work photos (`work1.jpg`, `work2.jpg`, …).
-3. Open `script.js` and edit the lists at the top (`LINKS`, `PROJECTS`, `EXPERIENCE`, `GALLERY`, `SKILLS`).
+## Update content
+Edit the lists at the top of `script.js`: `PROJECTS`, `EXPERIENCE`, `EDUCATION`, `AWARDS`, `SKILLS`, `GALLERY`, `REFEREES`, `SOCIAL`.
 
-Until a photo is uploaded, a grey placeholder is shown.
+## Logos
+Put logo files here (PNG with a transparent or white background works best):
+- `images/logos/fieldlink.png`: Field Link
+- `images/logos/muhas.png`: MUHAS Digital Health & Innovation
 
-## Put it online (free)
-Repo **Settings → Pages → Source: Deploy from a branch** → pick the branch and `/ (root)` → Save.
-Your site will be live at `https://bicfaylo.github.io/bic/`.
+Until a file is added, a text wordmark is shown in its place.
+
+## Publish (free)
+Repo **Settings → Pages → Deploy from a branch** → choose the branch and `/ (root)`.
