@@ -3,49 +3,92 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio</title>
+  <title>Baraka Chongera — Portfolio</title>
+  <meta name="description" content="Baraka Issack Chongera — IoT & embedded systems engineer and technology entrepreneur from Tanzania.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="nav">
-    <a href="#top" class="logo" id="logo"></a>
+    <a href="#top" class="logo">Baraka<span>.</span></a>
     <nav>
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero">
-      <img id="avatar" class="avatar" alt="Profile photo">
-      <h1 id="name"></h1>
-      <p id="tagline" class="tagline"></p>
-      <a href="#work" class="btn">See my work</a>
+      <div class="hero-text">
+        <p class="eyebrow">IoT &amp; Embedded Systems · Technology Entrepreneur</p>
+        <h1>Baraka Issack <span>Chongera</span></h1>
+        <p class="lead">I build IoT and embedded products end to end: the hardware, the firmware and the software around them. Then I take them to paying customers. Based in Morogoro, Tanzania.</p>
+        <div class="cta">
+          <a href="#projects" class="btn">See my work</a>
+          <a href="#contact" class="btn ghost">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-img"><img src="images/profile.jpg" alt="Baraka Chongera at the IEEE Region 8 University STEM Outreach"></div>
     </section>
 
-    <section id="work" class="section">
-      <h2>My Work</h2>
-      <div id="filters" class="filters"></div>
-      <div id="grid" class="grid"></div>
+    <section class="stats">
+      <div><strong>2</strong><span>Innovation Day awards (2025)</span></div>
+      <div><strong>26</strong><span>Tone Salama units deployed</span></div>
+      <div><strong>4</strong><span>Regions served</span></div>
+      <div><strong>2</strong><span>Ventures founded</span></div>
     </section>
 
-    <section id="about" class="section about">
-      <h2>About Me</h2>
-      <p id="about-text"></p>
-      <ul id="skills" class="skills"></ul>
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div id="projects-grid" class="projects"></div>
+    </section>
+
+    <section id="awards" class="section alt">
+      <h2>Awards &amp; Recognition</h2>
+      <div class="awards">
+        <div class="award"><span class="icon">🏆</span><h3>Innovation of the Year</h3><p>Mzumbe University Innovation Day 2025, for Tone Salama.</p></div>
+        <div class="award"><span class="icon">🚀</span><h3>Best Emerging Startup of the Year</h3><p>Mzumbe University Innovation Day 2025, for RolaCall.</p></div>
+        <div class="award"><span class="icon">🎓</span><h3>Invited Guest Lecturer</h3><p>MUHAS, Aug 2026. Taught robotics and AI to master's students in digital health.</p></div>
+        <div class="award"><span class="icon">🌍</span><h3>Youth Ignite Fellow</h3><p>Funguo Programme Student Founders Fellowship.</p></div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div id="timeline" class="timeline"></div>
+    </section>
+
+    <section id="gallery" class="section alt">
+      <h2>Gallery</h2>
+      <p class="sub">Exhibitions, fellowships, workshops and talks.</p>
+      <div id="gallery-grid" class="gallery"></div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div id="skills-grid" class="skills"></div>
+    </section>
+
+    <section id="education" class="section alt">
+      <h2>Education</h2>
+      <div class="edu">
+        <div><h3>Bachelor of ICT with Management</h3><p>Mzumbe University, Morogoro · 2024 – Present</p></div>
+        <div><h3>Diploma in ICT</h3><p>Catholic University College of Mbeya · 2020 – 2022 · GPA 3.57/5</p></div>
+        <div><h3>Certificate in ICT</h3><p>St. Augustine University of Tanzania, Mbeya · 2019 – 2020 · GPA 4.65/5</p></div>
+      </div>
     </section>
 
     <section id="contact" class="section contact">
-      <h2>Get in touch</h2>
-      <p>Have a project in mind? Let's talk.</p>
+      <h2>Let's build something</h2>
+      <p>Open to collaborations, IoT projects, partnerships and speaking invitations.</p>
       <div id="links" class="links"></div>
     </section>
   </main>
 
-  <footer class="footer"><span id="year"></span> · <span id="footer-name"></span></footer>
+  <footer class="footer">© <span id="year"></span> Baraka Issack Chongera · English &amp; Kiswahili</footer>
 
   <div id="lightbox" class="lightbox" hidden>
     <button class="close" aria-label="Close">&times;</button>

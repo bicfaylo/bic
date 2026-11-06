@@ -1,90 +1,139 @@
 // ============================================================
-//  EDIT THIS SECTION — your info and your works.
-//  Put your phone photos in the /images folder and reference
-//  them below, e.g. image: "images/my-photo.jpg"
+//  EDIT THIS FILE to update the content of the site.
 // ============================================================
-const PROFILE = {
-  name: "Bic Faylo",
-  tagline: "Creative & builder — here's a collection of the work I've been doing.",
-  avatar: "images/profile.jpg",
-  about: "Write a few sentences about yourself here: who you are, what you do, and what you love working on.",
-  skills: ["Photography", "Design", "Web Development", "Video Editing"],
-  links: [
-    { label: "Email", url: "mailto:chongerabaraka2@gmail.com" },
-    { label: "GitHub", url: "https://github.com/bicfaylo" },
-    { label: "Instagram", url: "https://instagram.com/" },
-  ],
-};
-
-const WORKS = [
-  { title: "Project One",   category: "Photography", image: "images/work1.jpg", description: "Short description of this work." },
-  { title: "Project Two",   category: "Design",      image: "images/work2.jpg", description: "Short description of this work." },
-  { title: "Project Three", category: "Web",         image: "images/work3.jpg", description: "Short description of this work." },
-  { title: "Project Four",  category: "Photography", image: "images/work4.jpg", description: "Short description of this work." },
-  { title: "Project Five",  category: "Design",      image: "images/work5.jpg", description: "Short description of this work." },
-  { title: "Project Six",   category: "Web",         image: "images/work6.jpg", description: "Short description of this work." },
+const LINKS = [
+  { label: "Email", url: "mailto:chongerabaraka1@gmail.com" },
+  { label: "LinkedIn", url: "https://www.linkedin.com/in/baraka_chongera" },
+  { label: "GitHub", url: "https://github.com/bicfaylo" },
+  // Add more, e.g.:
+  // { label: "Instagram", url: "https://instagram.com/YOUR_HANDLE" },
+  // { label: "GitLab", url: "https://gitlab.com/YOUR_USERNAME" },
 ];
+
+const PROJECTS = [
+  {
+    title: "Tone Salama: Smart Water Purification & Vending",
+    year: "2025", tags: ["IoT", "STM32", "GSM"],
+    images: ["images/tone-salama-demo.jpg", "images/tone-salama-unit.jpg"],
+    summary: "An IoT-enabled water filtration and coin-operated vending unit that brings safe, affordable drinking water to communities.",
+    points: [
+      "STM32-based unit with GSM telemetry to a central dashboard for water quality, usage and sales.",
+      "Deployed and commercialised: 26 units across 4 regions of Tanzania.",
+    ],
+    badge: "🏆 Innovation of the Year, Mzumbe Innovation Day 2025",
+  },
+  {
+    title: "Chimbo Mkononi: Agent-Based Digital Commerce",
+    year: "2026 – Present", tags: ["Founder", "Web Platform", "E-commerce"],
+    images: ["images/chimbo-logo.jpg"],
+    summary: "A platform that connects buyers across Tanzania to verified Kariakoo sellers through a network of trusted, certified field agents.",
+    points: [
+      "Built end-to-end ordering, payment, and agent and customer-management workflows.",
+      "Onboarded 12 verified sellers and 8 agents, processing 38 orders to date.",
+    ],
+  },
+  {
+    title: "RolaCall: LoRa Digital Customer Care System",
+    year: "2025", tags: ["LoRa", "Hardware", "Dashboard"],
+    icon: "📡",
+    summary: "A long-range wireless call-and-response system for hotels, restaurants and hospitals that works without Wi-Fi.",
+    points: [
+      "Designed the hardware (transmitter buttons and receiver base).",
+      "Built the dashboard and software integration.",
+    ],
+    badge: "🚀 Best Emerging Startup of the Year, Mzumbe Innovation Day 2025",
+  },
+  {
+    title: "Interactive English Teaching Robot",
+    year: "2026", tags: ["Robotics", "Speech", "EdTech"],
+    icon: "🤖",
+    summary: "A speech-enabled robot that helps primary school pupils learn English through interactive question-and-answer lessons.",
+    points: [
+      "Designed the 3D-printed head, speaker and microphone unit, and the software.",
+      "Lessons run from a laptop dashboard over a local wireless network.",
+      "Deployed in a Tanzanian primary school classroom, with multiple units built.",
+    ],
+    badge: "🎓 Led to an invited guest lecture at MUHAS",
+  },
+];
+
+const EXPERIENCE = [
+  { role: "Founder, Chimbo Mkononi", when: "2026 – Present", text: "Lead product, technology and business operations, from platform architecture to seller onboarding and growth." },
+  { role: "Guest Lecturer (Invited), MUHAS", when: "Aug 2026", text: "Taught robotics and AI to master's students in digital health." },
+  { role: "Founder, BIC Tech Solutions", when: "2024 – Present", text: "IoT, embedded and full-stack solutions for clients across Mbeya, Morogoro and Dar es Salaam: requirements, hardware, firmware, backend, deployment and support." },
+  { role: "Call Centre Assistant, Catholic University College of Mbeya", when: "Feb – Sep 2023", text: "Resolved or routed about 75 student and public enquiries per day, and supported front-office records." },
+  { role: "Graphic Designer & IT Technician, Reconciliation Community, Mbeya", when: "Aug – Nov 2022", text: "Produced print and digital designs; maintained office computers, networks and peripherals." },
+];
+
+const GALLERY = [
+  { src: "images/funguo-fellowship.jpg", caption: "Funguo Youth Ignite Student Founders Fellowship" },
+  { src: "images/tone-salama-demo.jpg", caption: "Demonstrating Tone Salama" },
+  { src: "images/presenting-2.jpg", caption: "Presenting at a tech workshop" },
+  { src: "images/funguo-panel.jpg", caption: "Youth Ignite fellowship session" },
+  { src: "images/profile.jpg", caption: "IEEE Region 8 University STEM Outreach" },
+  { src: "images/technology-showcase.jpg", caption: "Technology showcase" },
+  { src: "images/workshop-1.jpg", caption: "Hands-on technical workshop" },
+  { src: "images/exhibition-booth.jpg", caption: "Exhibition booth" },
+  { src: "images/speaking.jpg", caption: "Speaking at a session" },
+  { src: "images/exhibition-products.jpg", caption: "Engaging visitors at an exhibition" },
+  { src: "images/workshop-2.jpg", caption: "Collaborating with partners" },
+  { src: "images/presenting-1.jpg", caption: "Pitching to partners" },
+  { src: "images/tone-salama-unit.jpg", caption: "A deployed Tone Salama water point" },
+  { src: "images/notes.jpg", caption: "Planning the next build" },
+];
+
+const SKILLS = {
+  "IoT & Embedded": ["Arduino", "ESP32", "STM32", "LoRa", "GSM telemetry", "Sensors", "PCB prototyping"],
+  "Software": ["C", "Python", "Java", "JavaScript", "HTML/CSS", "Bootstrap 5", "REST APIs"],
+  "Data & Tools": ["PostgreSQL", "MySQL", "Git/GitLab", "Docker", "Linux"],
+  "Leadership": ["Project management", "Public speaking", "Team collaboration", "Graphic design", "Social media"],
+};
 // ============================================================
 
 const $ = (s) => document.querySelector(s);
-
-// Placeholder shown until a real photo is added
-const placeholder = (text) =>
-  "data:image/svg+xml;utf8," + encodeURIComponent(
-    `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300"><rect width="100%" height="100%" fill="#22252e"/><text x="50%" y="50%" fill="#666b78" font-family="sans-serif" font-size="18" text-anchor="middle" dominant-baseline="middle">${text}</text></svg>`
-  );
-const setImg = (img, src, label) => {
-  img.src = src;
-  img.onerror = () => { img.onerror = null; img.src = placeholder(label); };
-};
-
-document.title = `${PROFILE.name} — Portfolio`;
-$("#logo").textContent = PROFILE.name;
-$("#name").textContent = PROFILE.name;
-$("#footer-name").textContent = PROFILE.name;
-$("#tagline").textContent = PROFILE.tagline;
-$("#about-text").textContent = PROFILE.about;
-$("#year").textContent = "© " + new Date().getFullYear();
-setImg($("#avatar"), PROFILE.avatar, "Photo");
-PROFILE.skills.forEach((s) => { const li = document.createElement("li"); li.textContent = s; $("#skills").append(li); });
-PROFILE.links.forEach((l) => { const a = document.createElement("a"); a.href = l.url; a.textContent = l.label; a.target = "_blank"; $("#links").append(a); });
-
-const grid = $("#grid");
-function render(filter) {
-  grid.innerHTML = "";
-  WORKS.filter((w) => filter === "All" || w.category === filter).forEach((w) => {
-    const card = document.createElement("article");
-    card.className = "card";
-    card.innerHTML = `<img alt=""><div class="info"><span class="cat"></span><h3></h3><p></p></div>`;
-    setImg(card.querySelector("img"), w.image, w.title);
-    card.querySelector("img").alt = w.title;
-    card.querySelector(".cat").textContent = w.category;
-    card.querySelector("h3").textContent = w.title;
-    card.querySelector("p").textContent = w.description;
-    card.onclick = () => openLightbox(card.querySelector("img").src, `${w.title} — ${w.description}`);
-    grid.append(card);
-  });
-}
-
-const cats = ["All", ...new Set(WORKS.map((w) => w.category))];
-cats.forEach((c) => {
-  const b = document.createElement("button");
-  b.textContent = c;
-  if (c === "All") b.classList.add("active");
-  b.onclick = () => {
-    document.querySelectorAll(".filters button").forEach((x) => x.classList.remove("active"));
-    b.classList.add("active");
-    render(c);
-  };
-  $("#filters").append(b);
-});
-render("All");
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text) e.textContent = text; return e; };
 
 const lb = $("#lightbox");
-function openLightbox(src, caption) {
-  lb.querySelector("img").src = src;
-  lb.querySelector(".caption").textContent = caption;
-  lb.hidden = false;
-}
-lb.onclick = (e) => { if (e.target !== lb.querySelector("img")) lb.hidden = true; };
+function openLightbox(src, caption) { lb.querySelector("img").src = src; lb.querySelector(".caption").textContent = caption || ""; lb.hidden = false; }
+lb.onclick = (e) => { if (e.target.tagName !== "IMG") lb.hidden = true; };
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") lb.hidden = true; });
+
+PROJECTS.forEach((p) => {
+  const card = el("article", "project");
+  const media = el("div", "p-media" + (p.images && p.images.length > 1 ? " two" : ""));
+  if (p.images) p.images.forEach((src) => {
+    const img = el("img"); img.src = src; img.alt = p.title; img.loading = "lazy";
+    img.onclick = () => openLightbox(src, p.title); media.append(img);
+  });
+  else media.append(el("div", "ph", p.icon));
+  const body = el("div", "p-body");
+  const meta = el("div", "p-meta");
+  p.tags.forEach((t) => meta.append(el("span", "tag", t)));
+  meta.append(el("span", "year", p.year));
+  body.append(meta, el("h3", null, p.title), el("p", null, p.summary));
+  const ul = el("ul"); p.points.forEach((x) => ul.append(el("li", null, x))); body.append(ul);
+  if (p.badge) body.append(el("span", "badge", p.badge));
+  card.append(media, body);
+  $("#projects-grid").append(card);
+});
+
+EXPERIENCE.forEach((x) => {
+  const d = el("div", "t-item");
+  d.append(el("span", "when", x.when), el("h3", null, x.role), el("p", null, x.text));
+  $("#timeline").append(d);
+});
+
+GALLERY.forEach((g) => {
+  const f = el("figure"); const img = el("img"); img.src = g.src; img.alt = g.caption; img.loading = "lazy";
+  f.append(img, el("figcaption", null, g.caption)); f.onclick = () => openLightbox(g.src, g.caption);
+  $("#gallery-grid").append(f);
+});
+
+Object.entries(SKILLS).forEach(([group, list]) => {
+  const s = el("div", "skill"); s.append(el("h3", null, group));
+  const c = el("div", "chips"); list.forEach((x) => c.append(el("span", null, x))); s.append(c);
+  $("#skills-grid").append(s);
+});
+
+LINKS.forEach((l) => { const a = el("a", null, l.label); a.href = l.url; a.target = "_blank"; a.rel = "noopener"; $("#links").append(a); });
+$("#year").textContent = new Date().getFullYear();

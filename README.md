@@ -1,11 +1,11 @@
-# bic — Portfolio Website
+# bic — Baraka Chongera Portfolio
 
 A simple, fast portfolio site (plain HTML/CSS/JS, no build step).
 
 ## Add your photos (from your phone)
 1. On GitHub, open the `images/` folder → **Add file → Upload files** (works from the GitHub mobile site/app).
 2. Upload `profile.jpg` (your face photo) and your work photos (`work1.jpg`, `work2.jpg`, …).
-3. Open `script.js` and edit the `PROFILE` and `WORKS` sections at the top: titles, categories, descriptions and image file names.
+3. Open `script.js` and edit the lists at the top (`LINKS`, `PROJECTS`, `EXPERIENCE`, `GALLERY`, `SKILLS`).
 
 Until a photo is uploaded, a grey placeholder is shown.
 
