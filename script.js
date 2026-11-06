@@ -53,8 +53,8 @@ const PROJECTS = [
   {
     title: "Chimbo Mkononi: Agent-Based Digital Commerce",
     year: "2026 – Present", tags: ["Founder", "E-commerce", "Platform"],
-    logo: "images/chimbo-logo.jpg",
-    link: { label: "Visit chimbomkononi.co.tz", url: "https://www.chimbomkononi.co.tz" },
+    logo: "images/logos/chimbo.jpg", cover: true,
+    link: { label: "Visit chimbomkononi.com", url: "https://chimbomkononi.com" },
     summary: "A platform connecting buyers across Tanzania to verified Kariakoo sellers through certified agents.",
     points: [
       "Lead product, technology and business operations, from platform architecture to seller onboarding and growth.",
@@ -185,7 +185,7 @@ SOCIAL.forEach((s) => {
 
 // Media helper: image, or logo with wordmark fallback
 function logoTile(p) {
-  const box = el("div", "pf-logo");
+  const box = el("div", "pf-logo" + (p.cover ? " cover" : ""));
   const showWordmark = () => {
     box.innerHTML = ""; const w = el("div", "wordmark");
     w.append(el("b", null, p.wordmark ? p.wordmark[0] : p.title), el("small", null, p.wordmark ? p.wordmark[1] : ""));

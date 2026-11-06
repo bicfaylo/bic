@@ -9,6 +9,7 @@ Edit the lists at the top of `script.js`: `PROJECTS`, `EXPERIENCE`, `EDUCATION`,
 Put logo files here (PNG with a transparent or white background works best):
 - `images/logos/fieldlink.png`: Field Link
 - `images/logos/muhas.png`: MUHAS Digital Health & Innovation
+- `images/logos/chimbo.jpg`: Chimbo Mkononi
 
 Until a file is added, a text wordmark is shown in its place.
 
