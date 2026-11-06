@@ -28,18 +28,6 @@ const PROJECTS = [
     badge: "🏆 Innovation of the Year, Mzumbe University Innovation Day 2025",
   },
   {
-    title: "English Teaching Robot: Interactive AI Classroom Robot",
-    year: "2026", tags: ["Robotics", "AI", "EdTech"],
-    images: ["images/robot-group.jpg", "images/robot-single.jpg"],
-    summary: "An interactive, voice-based robot that helps Tanzanian primary school students learn English.",
-    points: [
-      "Runs from a laptop dashboard over a mobile router.",
-      "Designed and built the hardware, including a 3D-printed head and speaker/microphone body.",
-      "Multiple units deployed in a live classroom.",
-    ],
-    badge: "🎓 Led to a guest lecture invitation at MUHAS",
-  },
-  {
     title: "Field Link: Student Field Attachment Platform",
     year: "2026 – Present", tags: ["Founder", "Web Platform", "WhatsApp"],
     logo: "images/logos/fieldlink.png", wordmark: ["Field Link", "fieldlink.ac"],
@@ -113,7 +101,6 @@ const PARTNERS = [
 ];
 
 const GALLERY = [
-  { src: "images/robot-group.jpg", caption: "English teaching robots" },
   { src: "images/funguo-fellowship.jpg", caption: "Funguo Youth Ignite Student Founders Fellowship" },
   { src: "images/tone-salama-demo.jpg", caption: "Demonstrating Tone Salama" },
   { src: "images/presenting-2.jpg", caption: "Presenting at a tech workshop" },

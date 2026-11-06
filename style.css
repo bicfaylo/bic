@@ -96,7 +96,7 @@ img{display:block;max-width:100%}
 .service p{color:var(--muted)}.service:hover p,.service.active p{color:rgba(255,255,255,.85)}
 
 /* Portfolio */
-.portfolio{columns:3 320px;column-gap:28px}
+.portfolio{columns:2 340px;column-gap:28px}
 .pf-item{break-inside:avoid;margin-bottom:28px;cursor:pointer}
 .pf-thumb{position:relative;border-radius:24px;overflow:hidden;background:var(--card)}
 .pf-thumb img{width:100%;transition:transform .6s}
