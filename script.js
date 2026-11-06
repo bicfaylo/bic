@@ -74,7 +74,7 @@ const EXPERIENCE = [
   { role: "Digital Health Developer", org: "Muhimbili University of Health and Allied Sciences (MUHAS)", when: "Oct 2026 – Present", text: "Developing the event management system for the Digital Health and Innovation conference, and maintaining the official event website." },
   { role: "Founder", org: "Field Link", when: "2026 – Present", text: "Built and run fieldlink.ac. Placed 60+ students across 20+ host organisations from 135+ applications." },
   { role: "Founder", org: "Chimbo Mkononi", when: "2026 – Present", text: "Agent-based digital commerce platform with 12 verified sellers, 8 agents and 150+ orders." },
-  { role: "Guest Lecturer (Robotics & AI)", org: "MUHAS", when: "Aug 2026", text: "Invited to teach robotics and AI fundamentals to master's students in digital health, in recognition of the English teaching robot." },
+  { role: "Guest Lecturer (Robotics & AI)", org: "MUHAS", when: "Aug 2026", text: "Invited to teach robotics and AI fundamentals to master's students in digital health." },
   { role: "Founder", org: "BIC Tech Solutions", when: "2024 – Present", text: "IoT, embedded and full-stack solutions for clients across Mbeya, Morogoro and Dar es Salaam, covering the full cycle from requirements to after-sales support." },
   { role: "Call Centre Assistant (Part-time)", org: "Catholic University College of Mbeya", when: "Feb – Sep 2023", text: "Handled front-line enquiries, resolving or routing 75 calls per day, with front-office admin support." },
   { role: "Graphic Designer & IT Technician (Part-time)", org: "Reconciliation Community, Mbeya", when: "Aug – Nov 2022", text: "Produced digital and print designs and maintained office computers, networks and peripherals." },
