@@ -29,7 +29,27 @@ const PROJECTS = [
     summary: "A platform that connects buyers across Tanzania to verified Kariakoo sellers through a network of trusted, certified field agents.",
     points: [
       "Built end-to-end ordering, payment, and agent and customer-management workflows.",
-      "Onboarded 12 verified sellers and 8 agents, processing 38 orders to date.",
+      "Onboarded 12 verified sellers and 8 agents, processing 150+ orders to date.",
+    ],
+  },
+  {
+    title: "Field Link: Student Field Attachment Platform",
+    year: "2026 – Present", tags: ["Founder", "Web Platform", "WhatsApp"],
+    icon: "🧭", link: { label: "fieldlink.ac", url: "https://fieldlink.ac" },
+    summary: "A web platform that matches university and college students to field attachment placements with host organisations.",
+    points: [
+      "Students apply through the web portal and WhatsApp, then get matched to host organisations.",
+      "135+ student applications received and 60+ students placed across 20+ host organisations.",
+    ],
+  },
+  {
+    title: "MUHAS Digital Health & Innovation Event System",
+    year: "Oct 2026 – Present", tags: ["Full-stack", "Events", "Digital Health"],
+    icon: "🏥", link: { label: "muhas-dhi.ac.tz", url: "https://muhas-dhi.ac.tz" },
+    summary: "The event management system and official website for MUHAS's Digital Health and Innovation conference.",
+    points: [
+      "Delegate registration, payment-linked QR name tags, on-site check-in and email reminders.",
+      "Maintain the event website: speaker profiles, new content pages, and design and usability improvements.",
     ],
   },
   {
@@ -49,17 +69,19 @@ const PROJECTS = [
     icon: "🤖",
     summary: "A speech-enabled robot that helps primary school pupils learn English through interactive question-and-answer lessons.",
     points: [
-      "Designed the 3D-printed head, speaker and microphone unit, and the software.",
-      "Lessons run from a laptop dashboard over a local wireless network.",
-      "Deployed in a Tanzanian primary school classroom, with multiple units built.",
+      "Voice-based lessons run from a laptop dashboard over a mobile router.",
+      "Designed and built the hardware, including a 3D-printed head and speaker/microphone body.",
+      "Deployed multiple units in a live primary school classroom.",
     ],
     badge: "🎓 Led to an invited guest lecture at MUHAS",
   },
 ];
 
 const EXPERIENCE = [
+  { role: "Digital Health Developer, MUHAS", when: "Oct 2026 – Present", text: "Building the event management system for the Digital Health and Innovation conference and maintaining the official event website (muhas-dhi.ac.tz)." },
+  { role: "Founder, Field Link", when: "2026 – Present", text: "Built and run fieldlink.ac, which has placed 60+ students across 20+ host organisations." },
   { role: "Founder, Chimbo Mkononi", when: "2026 – Present", text: "Lead product, technology and business operations, from platform architecture to seller onboarding and growth." },
-  { role: "Guest Lecturer (Invited), MUHAS", when: "Aug 2026", text: "Taught robotics and AI to master's students in digital health." },
+  { role: "Guest Lecturer (Invited), MUHAS", when: "Aug 2026", text: "Invited to teach robotics and AI to master's students in digital health, in recognition of the English teaching robot." },
   { role: "Founder, BIC Tech Solutions", when: "2024 – Present", text: "IoT, embedded and full-stack solutions for clients across Mbeya, Morogoro and Dar es Salaam: requirements, hardware, firmware, backend, deployment and support." },
   { role: "Call Centre Assistant, Catholic University College of Mbeya", when: "Feb – Sep 2023", text: "Resolved or routed about 75 student and public enquiries per day, and supported front-office records." },
   { role: "Graphic Designer & IT Technician, Reconciliation Community, Mbeya", when: "Aug – Nov 2022", text: "Produced print and digital designs; maintained office computers, networks and peripherals." },
@@ -84,7 +106,8 @@ const GALLERY = [
 
 const SKILLS = {
   "IoT & Embedded": ["Arduino", "ESP32", "STM32", "LoRa", "GSM telemetry", "Sensors", "PCB prototyping"],
-  "Software": ["C", "Python", "Java", "JavaScript", "HTML/CSS", "Bootstrap 5", "REST APIs"],
+  "Software": ["C", "Python", "Java", "JavaScript", "HTML/CSS", "Bootstrap 5", "REST APIs", "Full-stack web apps"],
+  "Robotics & AI": ["Robot design", "3D-printed prototyping", "Voice interaction", "AI & LLM APIs"],
   "Data & Tools": ["PostgreSQL", "MySQL", "Git/GitLab", "Docker", "Linux"],
   "Leadership": ["Project management", "Public speaking", "Team collaboration", "Graphic design", "Social media"],
 };
@@ -113,6 +136,7 @@ PROJECTS.forEach((p) => {
   body.append(meta, el("h3", null, p.title), el("p", null, p.summary));
   const ul = el("ul"); p.points.forEach((x) => ul.append(el("li", null, x))); body.append(ul);
   if (p.badge) body.append(el("span", "badge", p.badge));
+  if (p.link) { const a = el("a", "p-link", p.link.label + " ↗"); a.href = p.link.url; a.target = "_blank"; a.rel = "noopener"; body.append(a); }
   card.append(media, body);
   $("#projects-grid").append(card);
 });

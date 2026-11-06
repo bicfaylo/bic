@@ -83,3 +83,4 @@ img{display:block;max-width:100%}
   .project{grid-template-columns:1fr}.project:nth-child(even) .p-media{order:0}
 }
 @media(max-width:480px){.nav nav a:nth-child(3){display:none}}
+.p-link{display:inline-block;margin-top:14px;margin-left:8px;font-weight:600;color:var(--orange)}.p-link:hover{text-decoration:underline}
